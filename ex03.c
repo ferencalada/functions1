@@ -14,15 +14,17 @@ char problemB (char string1[30], char string2[30]){
 		}
 		if(band == 0){
 		    str = '0';
+		    printf("the strings are equal");
 		    return str;
 		}
 		else{
+			printf("the first different element is %c",str);
 		    return str;
 		}
 }
 int main (void){
 	char string1[30]= "this is string 1";
-	char string2[30]="this is string 0";
-	printf("the result of problem B is %c", problemB(string1, string2));
+	char string2[30]="this is string 2";
+	problemB(string1,string2);
 	return 0;
 }
